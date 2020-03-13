@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		711ADB87241B751F006D94B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711ADB86241B751F006D94B0 /* AppDelegate.swift */; };
 		711ADB89241B751F006D94B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711ADB88241B751F006D94B0 /* SceneDelegate.swift */; };
-		711ADB8B241B751F006D94B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711ADB8A241B751F006D94B0 /* ViewController.swift */; };
 		711ADB8E241B751F006D94B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711ADB8C241B751F006D94B0 /* Main.storyboard */; };
 		711ADB90241B752F006D94B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711ADB8F241B752F006D94B0 /* Assets.xcassets */; };
 		711ADB93241B752F006D94B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711ADB91241B752F006D94B0 /* LaunchScreen.storyboard */; };
+		711ADB9F241B788B006D94B0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711ADB9E241B788B006D94B0 /* WelcomeViewController.swift */; };
+		711ADBA1241B78AC006D94B0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711ADBA0241B78AC006D94B0 /* RegisterViewController.swift */; };
+		711ADBA3241B78B8006D94B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711ADBA2241B78B8006D94B0 /* LoginViewController.swift */; };
+		711ADBA5241B78C5006D94B0 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711ADBA4241B78C5006D94B0 /* ChatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		711ADB83241B751F006D94B0 /* Nimble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nimble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		711ADB86241B751F006D94B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		711ADB88241B751F006D94B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		711ADB8A241B751F006D94B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		711ADB8D241B751F006D94B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		711ADB8F241B752F006D94B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		711ADB92241B752F006D94B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		711ADB94241B752F006D94B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711ADB9E241B788B006D94B0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		711ADBA0241B78AC006D94B0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		711ADBA2241B78B8006D94B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		711ADBA4241B78C5006D94B0 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		711ADB85241B751F006D94B0 /* Nimble */ = {
 			isa = PBXGroup;
 			children = (
+				711ADB9D241B7629006D94B0 /* Supporting Files */,
+				711ADB9C241B75FF006D94B0 /* Controller */,
+				711ADB9B241B75F9006D94B0 /* View */,
+				711ADB9A241B75F3006D94B0 /* Model */,
 				711ADB86241B751F006D94B0 /* AppDelegate.swift */,
 				711ADB88241B751F006D94B0 /* SceneDelegate.swift */,
-				711ADB8A241B751F006D94B0 /* ViewController.swift */,
-				711ADB8C241B751F006D94B0 /* Main.storyboard */,
 				711ADB8F241B752F006D94B0 /* Assets.xcassets */,
 				711ADB91241B752F006D94B0 /* LaunchScreen.storyboard */,
-				711ADB94241B752F006D94B0 /* Info.plist */,
 			);
 			path = Nimble;
+			sourceTree = "<group>";
+		};
+		711ADB9A241B75F3006D94B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		711ADB9B241B75F9006D94B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				711ADB8C241B751F006D94B0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		711ADB9C241B75FF006D94B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				711ADB9E241B788B006D94B0 /* WelcomeViewController.swift */,
+				711ADBA0241B78AC006D94B0 /* RegisterViewController.swift */,
+				711ADBA2241B78B8006D94B0 /* LoginViewController.swift */,
+				711ADBA4241B78C5006D94B0 /* ChatsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		711ADB9D241B7629006D94B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				711ADB94241B752F006D94B0 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				711ADB8B241B751F006D94B0 /* ViewController.swift in Sources */,
+				711ADB9F241B788B006D94B0 /* WelcomeViewController.swift in Sources */,
 				711ADB87241B751F006D94B0 /* AppDelegate.swift in Sources */,
 				711ADB89241B751F006D94B0 /* SceneDelegate.swift in Sources */,
+				711ADBA3241B78B8006D94B0 /* LoginViewController.swift in Sources */,
+				711ADBA5241B78C5006D94B0 /* ChatsViewController.swift in Sources */,
+				711ADBA1241B78AC006D94B0 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7NFHG83A7;
-				INFOPLIST_FILE = Nimble/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Nimble/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7NFHG83A7;
-				INFOPLIST_FILE = Nimble/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Nimble/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
